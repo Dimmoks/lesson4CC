@@ -12,24 +12,24 @@
 <body>
 
     <div class="container">
-        <div class="header-text">
+        <div class="headerText">
             Lesson 4
         </div>
-        <div class="blockbutton">
-            <button class="buttonclick" id="buttonclick" onclick="buttonClickStatic()">
+        <div class="buttonContainer">
+            <button class="buttonClick" id="buttonClick" onclick="buttonClickStatic()">
                 Звичайне натиснення
             </button>
-            <button class="buttonbounce" id="buttonbounce" onclick="playSound()">
+            <button class="buttonSound" id="buttonSound" onclick="playSound()">
                 Подати звук
             </button>
-            <div class="blocksetbutton">
-                <button class="buttonclickset" id="buttonclickset" onclick="buttonClickSet()">
+            <div class="setButtonWrap">
+                <button class="clickSetButton" id="clickSetButton" onclick="buttonClickSet()">
                     Лічильник натиснень
                 </button>
-                <div class="setbuttonclick" id="counterclick">
+                <div class="amountClickButton" id="counterClick">
 
                 </div>
-                <button class="buttonclickreset" id="buttonclickreser" onclick="buttonClickReset()">
+                <button class="buttonClickReset" id="buttonClickReset" onclick="buttonClickReset()">
                     обнулити
                 </button>
             </div>
@@ -51,7 +51,14 @@
         }
 
         // Кнопка лічильника натиснень
-        var counter = 0; // Оголошуємо та присвоюємо елементу counter стандартне число 0
+
+        void function counterButtonClick() {
+            buttonClickSet();
+            buttonClickReset();
+            updateDisplay();
+        }
+
+        let counter = 0;
 
         function buttonClickSet() {
             updateDisplay(++counter); //змінюємо число при натиску на кнопку на +1, та викликаємо функцію для оновлення числа
@@ -65,7 +72,7 @@
         }
 
         function updateDisplay(appset) { // функція, яка оновляє число для обраного індефікатора
-            document.getElementById('counterclick').innerHTML = appset; //присвоюємо id до counterclick (змінне число). Завдяки innerHTML числ оновляється на сторінці.
+            document.getElementById('counterClick').innerHTML = appset; //присвоюємо id до counterclick (змінне число). Завдяки innerHTML числ оновляється на сторінці.
         }
 
     </script>

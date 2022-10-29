@@ -11,7 +11,7 @@
     height: 100%;
 }
 
-.header-text {
+.headerText {
     text-align: center;
     margin-top: 30px;
     font-size: 40px;
@@ -19,7 +19,7 @@
     color: #333;
 }
 
-.blockbutton{
+.buttonContainer{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-around;
@@ -28,7 +28,7 @@
     height: 200px;
 }
 
-.buttonclick {
+.buttonClick {
     width: 300px;
     height: 70px;
     border: solid 1px #333;
@@ -38,7 +38,7 @@
     font-size: 20px;
 }
 
-.buttonclick:hover {
+.buttonClick:hover {
     background-color: rgba(231, 17, 17, 0.836);
     transition: 0.4s;
     color: #fff;
@@ -46,7 +46,7 @@
     box-shadow: rgba(255, 0, 0, 0.12) 0px 2px 4px 0px, rgba(255, 0, 0, 0.596) 0px 2px 16px 0px;
 }
 
-.buttonbounce {
+.buttonSound {
     width: 300px;
     height: 70px;
     border: solid 1px #333;
@@ -56,7 +56,7 @@
     font-size: 20px;
 }
 
-.buttonbounce:hover {
+.buttonSound:hover {
     background-color: rgba(17, 163, 231, 0.836);
     transition: 0.4s;
     color: #fff;
@@ -64,13 +64,13 @@
     box-shadow: rgba(0, 132, 255, 0.12) 0px 2px 4px 0px, rgba(0, 140, 255, 0.596) 0px 2px 16px 0px;
 }
 
-.blocksetbutton {
+.setButtonWrap {
     display: block;
     align-content: space-between;
     justify-content: space-between;
 }
 
-.buttonclickset {
+.clickSetButton {
     width: 300px;
     height: 70px;
     border: solid 1px #333;
@@ -80,7 +80,7 @@
     font-size: 20px;
 }
 
-.buttonclickset:hover {
+.clickSetButton:hover {
     background-color: rgba(188, 17, 231, 0.836);
     transition: 0.4s;
     color: #fff;
@@ -88,11 +88,11 @@
     box-shadow: rgba(212, 0, 255, 0.12) 0px 2px 4px 0px, rgba(212, 0, 255, 0.596) 0px 2px 16px 0px;
 }
 
-.setbuttonclick {
+.amountClickButton {
     position: absolute;
 }
 
-.buttonclickreset {
+.buttonClickReset {
     margin: 0 auto;
     margin-top: 5px;
     border: solid 1px;
@@ -103,7 +103,7 @@
     transition: 0.3s;
 }
 
-.buttonclickreset:hover {
+.buttonClickReset:hover {
     background-color: #333;
     color: #fff;
     transition: 0.4s;
