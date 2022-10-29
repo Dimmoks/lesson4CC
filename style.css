@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    height: 100%;
+}
+
+.header-text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+}
+
+.blockbutton{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    margin: 200px auto;
+    width: 1200px;
+    height: 200px;
+}
+
+.buttonclick {
+    width: 300px;
+    height: 70px;
+    border: solid 1px #333;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.buttonclick:hover {
+    background-color: rgba(231, 17, 17, 0.836);
+    transition: 0.4s;
+    color: #fff;
+    border: none;
+    box-shadow: rgba(255, 0, 0, 0.12) 0px 2px 4px 0px, rgba(255, 0, 0, 0.596) 0px 2px 16px 0px;
+}
+
+.buttonbounce {
+    width: 300px;
+    height: 70px;
+    border: solid 1px #333;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.buttonbounce:hover {
+    background-color: rgba(17, 163, 231, 0.836);
+    transition: 0.4s;
+    color: #fff;
+    border: none;
+    box-shadow: rgba(0, 132, 255, 0.12) 0px 2px 4px 0px, rgba(0, 140, 255, 0.596) 0px 2px 16px 0px;
+}
+
+.blocksetbutton {
+    display: block;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.buttonclickset {
+    width: 300px;
+    height: 70px;
+    border: solid 1px #333;
+    border-radius: 30px;
+    background-color: transparent;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.buttonclickset:hover {
+    background-color: rgba(188, 17, 231, 0.836);
+    transition: 0.4s;
+    color: #fff;
+    border: none;
+    box-shadow: rgba(212, 0, 255, 0.12) 0px 2px 4px 0px, rgba(212, 0, 255, 0.596) 0px 2px 16px 0px;
+}
+
+.setbuttonclick {
+    position: absolute;
+}
+
+.buttonclickreset {
+    margin: 0 auto;
+    margin-top: 5px;
+    border: solid 1px;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    display: block;
+    transition: 0.3s;
+}
+
+.buttonclickreset:hover {
+    background-color: #333;
+    color: #fff;
+    transition: 0.4s;
+}

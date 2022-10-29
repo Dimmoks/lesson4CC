@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header-text">
+            Lesson 4
+        </div>
+        <div class="blockbutton">
+            <button class="buttonclick" id="buttonclick" onclick="buttonClickStatic()">
+                Звичайне натиснення
+            </button>
+            <button class="buttonbounce" id="buttonbounce" onclick="playSound()">
+                Подати звук
+            </button>
+            <div class="blocksetbutton">
+                <button class="buttonclickset" id="buttonclickset" onclick="buttonClickSet()">
+                    Лічильник натиснень
+                </button>
+                <div class="setbuttonclick" id="counterclick">
+
+                </div>
+                <button class="buttonclickreset" id="buttonclickreser" onclick="buttonClickReset()">
+                    обнулити
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Звичайне натиснення
+        function buttonClickStatic() { //додаємо функцію до елемента
+            console.log('Кнопка buttonClickStatic натиснута'); //виводимо у консоль функцію елемента
+        }
+
+        // Відтвоорення звуку
+        function playSound() {
+            const music = new Audio('Tr53.wav'); // Константу music присвоюємо новий аудіо файл, локальним шляхом.
+            music.play(); // Додаємоо константі дію відтворення звуку при відтвооренні фунції.
+            console.log('Звук Tr53.wav відтворенно'); //вивоодимо у консоль дію.
+        }
+
+        // Кнопка лічильника натиснень
+        var counter = 0; // Оголошуємо та присвоюємо елементу counter стандартне число 0
+
+        function buttonClickSet() {
+            updateDisplay(++counter); //змінюємо число при натиску на кнопку на +1, та викликаємо функцію для оновлення числа
+            console.log('Лічильник оновлено');
+        }
+
+        function buttonClickReset() { //обнулення
+            counter = ''; // обнулення лічильника до нуля ( '' - використав щоб на місці числа не було нічогоо, можна булоб замінити на 0 для його вивединня )
+            updateDisplay(counter); //виклик функції для оновлення числа на 0 або ''
+            console.log('Лічильник зброшено');
+        }
+
+        function updateDisplay(appset) { // функція, яка оновляє число для обраного індефікатора
+            document.getElementById('counterclick').innerHTML = appset; //присвоюємо id до counterclick (змінне число). Завдяки innerHTML числ оновляється на сторінці.
+        }
+
+    </script>
+
+</body>
+
+</html>
